@@ -14,7 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        dd('here');
         $this->call([
             //ImageSeeder::class,
             //IconSeeder::class,
