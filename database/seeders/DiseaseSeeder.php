@@ -16,6 +16,8 @@ class DiseaseSeeder extends Seeder
      */
     public function run()
     {
+        Disease::destroy(Disease::all());
+
         $data = [
           [
             'name' => 'Aborto',
@@ -2629,6 +2631,7 @@ class DiseaseSeeder extends Seeder
         Disease::where('name', 'Cáncer de bazo')->update(['disease_id', Disease::where('name', 'Bazo')->first()->id]);
         Disease::where('name', 'Inflamación del bazo')->update(['disease_id', Disease::where('name', 'Bazo')->first()->id]);
         Disease::where('name', 'Aftas en la boca')->update(['disease_id', Disease::where('name', 'Boca')->first()->id]);
+        /*Disease::where('name', 'Amenaza de aborto')->update(['disease_id', Disease::where('name', 'Aborto')->first()->id]);
         Disease::where('name', 'Amenaza de aborto')->update(['disease_id', Disease::where('name', 'Aborto')->first()->id]);
         Disease::where('name', 'Amenaza de aborto')->update(['disease_id', Disease::where('name', 'Aborto')->first()->id]);
         Disease::where('name', 'Amenaza de aborto')->update(['disease_id', Disease::where('name', 'Aborto')->first()->id]);
@@ -2638,6 +2641,6 @@ class DiseaseSeeder extends Seeder
         Disease::where('name', 'Amenaza de aborto')->update(['disease_id', Disease::where('name', 'Aborto')->first()->id]);
         Disease::where('name', 'Amenaza de aborto')->update(['disease_id', Disease::where('name', 'Aborto')->first()->id]);
         Disease::where('name', 'Amenaza de aborto')->update(['disease_id', Disease::where('name', 'Aborto')->first()->id]);
-        Disease::where('name', 'Amenaza de aborto')->update(['disease_id', Disease::where('name', 'Aborto')->first()->id]);
+        */
     }
 }

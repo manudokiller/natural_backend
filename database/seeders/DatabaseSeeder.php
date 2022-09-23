@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             //ImageSeeder::class,
             //IconSeeder::class,
-            //DiseaseSeeder::class,
+            DiseaseSeeder::class,
         ]);
     }
 }
